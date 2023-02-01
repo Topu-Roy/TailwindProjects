@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="font-Poppins">
+
+    <!-- ! Navigation Bar -->
+    <header>
+        <nav class="flex flex-1 justify-between items-center gap-4 sticky 
+                            py-5 px-4 md:px-10 
+                           bg-slate-100 shadow-sm">
+            <div class="flex justify-start items-center gap-2">
+                <a href=""><h2 class="text-xl font-bold ">TOPU</h2></a>
+            </div>
+            <div>
+                <li class="hidden gap-5 justify-end font-medium md:flex">
+                    <a href="#"><ul>HOME</ul></a>
+                    <a href="#"><ul>SERVICES</ul></a>
+                    <a href="#"><ul>PORTFOLIO</ul></a>
+                    <a href="#"><ul>PRICING</ul></a>
+                    <a href="#"><ul>ABOUT</ul></a>
+                    <a href="#"><ul>CONTACT</ul></a>
+                </li>
+            </div>
+            <div class="md:hidden">
+                <img class="w-8" src="imgs/menu.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- ! Hero Section -->
+
+    <section class="md:py-20 bg-slate-50">
+        <div class="  flex flex-col-reverse  justify-center items-center mt-3 md:flex-row md:px-10">
+
+            <div class="px-4 text-center flex-1 md:text-left">
+                <h3 class="text-gray-500 font-medium pb-4">This is me</h3>
+                <h1 class="text-5xl font-bold pb-4">TOPU ROY</h1>
+                <p class="text-gray-500 mb-3 pb-4">Lorem ipsum dolor sit ames connecter adipisicing elit. Ipsa explicabo, itaque natu
+                     assumenda,exceptive enif dolor debitis modi atque facere tempora voluptas voluptatem!
+                      Esse, defect's!</p>
+                <button class="btn md:py-4 md:px-8 " type="button">MORE</button>
+            </div>
+
+            <div class="flex-1">
+                <img class="h-auto " src="imgs/topu.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

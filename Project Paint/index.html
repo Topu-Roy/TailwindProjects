@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+    <script defer src="index.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCzOh9NzM7i4Oq8Ey_Zes-qhO9p9ngxcX4",
+          authDomain: "awesome-folio.firebaseapp.com",
+          projectId: "awesome-folio",
+          storageBucket: "awesome-folio.appspot.com",
+          messagingSenderId: "243881537962",
+          appId: "1:243881537962:web:799b994e4ef6368a22bbd3",
+          measurementId: "G-Q1HC6G0QWH"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body class="font-Poppins bg-background">
+
+    <!-- ! Absolute Navigation Bar -->
+    <nav class="absolute top-[-10%] md:top-[5%] left-[6%] md:w-[88%] ">
+
+        <!-- ! Wrapper Nav -->
+        <div class="flex justify-between items-center sm:px-8 px-4 py-2 rounded-full md:bg-white md:bg-opacity-25 md:filter md:backdrop-blur-sm">
+
+            <!-- ! Logo -->
+            <div class="c">
+                <a href="#hero"><img src="../asset/logo.webp" alt="" class="hidden md:block w-20"></a>
+            </div>
+
+            <!-- ! Nav Links -->
+            <li class="hidden md:flex justify-center items-center gap-8 text-white text-sm font-semibold">
+                <ul class="text-btnRed" ><a href="">Home</a></ul>
+                <ul><a href="">About</a></ul>
+                <ul><a href="">Pricing</a></ul>
+                <ul><a href="">FaQ</a></ul>
+                <ul><button type="button" class="h-10 sm:h-11 w-28 bg-btnGray text-white rounded-full hover:text-black hover:bg-white transition-all duration-150">Contact</button></ul>
+            </li>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ! Scroll Activated Navigation -->
+    
+    <nav id="scroll_nav" class="hidden md:block fixed top-0 left-0 translate-y-[-100%] w-full transition-transform duration-150">
+
+        <!-- ! Wrapper Nav -->
+        <div class="px-[5%] bg-white shadow-md flex items-center justify-between py-4">
+
+            <!-- ! Logo -->
+            <div class="">
+                <a href="#hero"><img src="../asset/logo.webp" alt="" class="hidden md:block w-20"></a>
+            </div>
+
+            <!-- ! Nav Links -->
+            <li class="hidden md:flex justify-center items-center gap-8 text-gray-600 text-sm font-semibold">
+                <ul class="text-btnRed" ><a href="">Home</a></ul>
+                <ul><a href="">About</a></ul>
+                <ul><a href="">Pricing</a></ul>
+                <ul><a href="">FaQ</a></ul>
+                <ul><button type="button" class="h-10 sm:h-11 w-28 bg-btnGray text-white rounded-full hover:text-black hover:bg-white transition-all duration-150">Contact</button></ul>
+            </li>
+
+        </div>
+
+    </nav>
+
+    <!-- ! Mobile Menu Button -->
+    <div class="flex sticky top-[8%] left-[85%] md:hidden justify-center items-center gap-2 h-10 w-10 bg-white rounded-full shadow-lg p-1">
+
+        <button id="menu_button" type="button" class="h-full w-full flex justify-center items-center flex-col space-y-1">
+
+            <span id="line_1" class="w-[75%] h-1 bg-gray-800 rounded-xl transition-all duration-200"></span>
+            <span id="line_2" class="w-[75%] h-1 bg-gray-800 rounded-xl transition-all duration-200"></span>
+            <span id="line_3" class="w-[75%] h-1 bg-gray-800 rounded-xl transition-all duration-200"></span>
+
+        </button>
+
+    </div>
+
+    <!-- ! Mobile Menu -->
+    <div id="menu" class="z-50 fixed top-[15%] left-[7%] w-[86%] bg-white rounded-xl filter backdrop-blur-lg bg-opacity-90 menu_transform transition-all duration-200">
+
+        <li class="flex flex-col justify-center items-center gap-8 p-8 text-gray-600">
+            <ul><a href="">Home</a></ul>
+            <ul><a href="">About</a></ul>
+            <ul><a href="">Pricing</a></ul>
+            <ul><a href="">Contact</a></ul>
+            <ul><a href="">FaQ</a></ul>
+        </li>
+
+    </div>
+
+    <!-- ! Hero Section -->
+    <section id="hero" class="pb-4 md:pt-4">
+
+        <!-- ! Section Wrapper -->
+        <div style="background-image: url(../asset/hero-bg.jpg);" class="hero_responsive text-white text-center ">
+            
+
+            <div class="h-[20%] w-full"></div>
+            <div class="w-full h-[80%] py-8 mx-auto flex justify-between items-center flex-col">
+
+                <div class="">
+
+                    <h1 class="uppercase hero_heading font-extrabold mt-8">Freelance <br> Web Designer</h1>
+                    
+                    <p class="text-gray-300 text-sm mt-4 mx-8 sm:mx-16 md:mx-24 xl:text-base">My objective is to create better, more effective interfaces in order to enhance conversion rates.</p>
+        
+                </div>
+                <div class="flex_center gap-4 w-full">
+                    <button class="h-12 w-32 xl:w-40 2xl:h-14 2xl:w-44 rounded-full text-sm text-center font-bold features_btn_color">All Features</button>
+                    <button class="h-12 w-32 xl:w-40 2xl:h-14 2xl:w-44 rounded-full text-sm text-center font-bold hire_btn_color">Hire Now</button>
+                </div>
+    
+                <div class="flex mx-auto justify-between items-center bg-opacity-10 py-4 px-4 w-[90%] md:w-[70%] xl:w-[65%] 2xl:w-[50%] bg-slate-200 gap-4 rounded-lg">
+                    <img src="../asset/Brand/brand-3.webp" alt="" class="h-3 sm:h-6">
+                    <img src="../asset/Brand/brand-4.webp" alt="" class="h-3 sm:h-6">
+                    <img src="../asset/Brand/brand-2.webp" alt="" class="h-3 sm:h-6 md:h-5">
+                    <img src="../asset/Brand/brand-5.webp" alt="" class="h-3 sm:h-6 md:h-5">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ! Modern Look Section -->
+    <section id="modern_look" class=" py-8 md:py-16">
+
+        <!-- ! Section Wrapper -->
+        <div class="auto_height_responsive bg-white flex_center flex_responsive">
+
+            <div class="w-[90%] md:hidden">
+                <div class="h-9 w-24 rounded-full border-[2px]  border-btnRed flex justify-center font-bold text-[0.6rem] text-btnRed items-center">Modern Look</div>
+            </div>
+
+            <div class="md:w-[50%] mx-[2%] px-10">
+                <img src="../asset/hero-1.webp" alt="" class="px-10 sm:px-24 md:px-0 xl:px-12">
+            </div>
+
+            <div class="md:w-[50%] text-left space-y-4 w-[90%] mx-auto pt-10 md:pt-0">
+
+                <div class="hidden md:flex h-9 w-24 mb-8 rounded-full border-[2px]  border-btnRed font-bold text-[0.6rem] text-btnRed text-center justify-center items-center">Modern Look</div>
+
+                <h class="font-bold uppercase headline_responsive ">
+                    More <br class="hidden md:block"> Customer <br class="hidden md:block"> <span style="background-image: url(../asset/brush/retension.webp);" class="bg-contain bg-center bg-no-repeat">Retention</span>
+                </h>
+
+                <p class="text_responsive text-gray-600 text-left md:pr-10">
+                    I create with the intention of reducing consumer confusion and providing them with some kind of guidance.
+                    The website must establish a connection with the visitor and should not be overly complicated or unclear.
+                    To provide you and your brand a distinct identity, it is usually preferable to have a nice-looking website. 
+                </p>
+
+                <span class="hidden md:block md:h-5 2xl:h-10 w-full"></span>
+                <button type="button" class="h-9 xl:h-10 2xl:h-12 w-[45%] xl:w-[35%] 2xl:w-[30%] rounded-full bg-btnRed font-bold text-sm text-white text-center">More Details</button>
+
+            </div>
+        
+        </div>
+    </section>
+
+    <!-- ! Minimal Design Section  -->
+    <section class="bg-black py-8 md:py-16">
+
+        <!-- ! Section Wrapper -->
+        <div class="flex_responsive_reverse flat_responsive flex_center">
+            
+            <div class="md:w-[50%] text-left space-y-4 w-[90%] mx-auto pt-10 md:pt-0">
+                <div class="hidden md:flex h-9 w-32 mb-8 rounded-full border-[2px]  border-white font-bold text-[0.6rem] text-white text-center justify-center items-center">Minimal Design</div>
+                <h class="font-bold text-white uppercase text-3xl headline_responsive">
+                    Good design is <br class="sm:block"> good Business
+                </h>
+                <p class="text-slate-500 text-left md:pr-10 text_responsive">
+                    When choosing products or services from dating apps to online shopping—we base our choices on appearance.
+                    People who are successful in business are aware of this.
+                    According to Adobe, companies with good designs outscored those with poor designs on the S&P Index by 219% during a ten-year period. 
+                </p>
+
+                <span class="hidden md:block md:h-5 2xl:h-10 w-full"></span>
+                <button type="button" class="h-9 xl:h-10 2xl:h-12 w-[45%] xl:w-[35%] 2xl:w-[30%] rounded-full bg-white font-bold text-sm text-black text-center">More Details</button>
+            </div>
+            <div class="md:w-[50%]">
+                <img src="../asset/hero-2.webp" alt="" class="px-10 sm:px-24 md:px-0">
+            </div>
+            <div class="w-[90%] md:hidden">
+                <div class="h-9 w-32 rounded-full border-[2px]  border-white flex justify-center font-bold text-[0.6rem] text-white items-center">Minimal Design</div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- ! About Me Section -->
+    <section class=" py-8 md:py-16">
+
+        <!-- ! Section Wrapper -->
+        <div class="auto_height_responsive bg-white flex_center flex_responsive">
+
+            <div class="w-full flex_center flex_responsive_reverse px-4 xl:px-8 2xl:px-10">
+
+                <div class="md:w-[50%] text-left space-y-4 w-[90%] mx-auto pt-10 md:pt-0">
+
+                    <div class="hidden md:flex h-9 w-24 mb-8 rounded-full border-[2px]  border-btnYellow font-bold text-[0.6rem] text-yellow-400 text-center justify-center items-center">About Me</div>
+    
+                    <h class="font-bold uppercase headline_responsive ">
+                        Hi,<br class="hidden">I'm<br class="hidden"> <span style="background-image: url(../asset/brush/name.webp);" class="bg-contain bg-no-repeat bg-center">Topu</span> ROY
+                    </h>
+    
+                    <p class="text_responsive text-gray-600 text-left md:pr-10 ">
+                        I'm from Bangladesh and I study computer science and engineering while working as a web designer.
+                        I discovered that I was more at ease with web design, and my love of creating gorgeous user interfaces also aids in the creation of attractive website designs.
+                        To keep the fire alive, I'm experimenting with fresh and well-liked technology.  
+                    </p>
+
+                    <span class="hidden md:block md:h-5 2xl:h-10 w-full"></span>
+    
+                    <button type="button" class="h-9 xl:h-10 2xl:h-12 w-[45%] xl:w-[35%] 2xl:w-[30%] rounded-full bg-btnYellow font-bold text-sm text-btnGray text-center">Contact</button>
+    
+                </div>
+
+                <div class="md:w-[50%]">
+
+                    <div class="md:hidden flex h-9 w-20 mb-4 rounded-full border-[2px]  border-btnYellow font-bold text-[0.6rem] text-btnYellow text-center justify-center items-center">About Me</div>
+                    <img src="../asset/topu-yellow-bg.webp" alt="" class="p-2">
+
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+
+    <!-- ! Footer Section  -->
+    <section class="bg-black py-8 md:py-16">
+
+        <!-- ! Section Wrapper -->
+        <div class="flex_responsive_reverse flat_responsive flex_center">
+
+            <!-- ! content Div -->
+            <div class="text-slate-300">
+
+                <!-- ! Brand Logo -->
+                <a href="#hero"><img src="../asset/logo.png" alt="" class="w-20 mx-auto pb-20"></a>
+                
+                <!-- ! Other Links Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+                    <!-- ! Social Media -->
+                    <div class="space-y-8">
+
+                        <h1 class="text-lg font-medium">Online Presence</h1>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="#"><img src="../asset/icons/social/fb.png" alt="" class="w-10 opacity-70"></a>
+                            <a href="#"><img src="../asset/icons/social/fiverr.png" alt="" class="w-10 opacity-70"></a>
+                            <a href="#"><img src="../asset/icons/social/github.png" alt="" class="w-10 opacity-70"></a>
+                            <a href="#"><img src="../asset/icons/social/linkdin.png" alt="" class="w-10 opacity-70"></a>
+                        </div>
+
+
+                    </div>
+
+                    <!-- ! Contact -->
+                    <div class="space-y-8">
+
+                        <h1 class="text-lg font-medium">Key Features</h1>
+
+                        <div class="text-sm ">
+                            <p class="c">Beautiful UI</p>
+                            <p class="c">User Friendly</p>
+                            <p class="c">Future Proof</p>
+                            <p class="c">Up To Date</p>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- ! Others -->
+                    <div class="space-y-8">
+
+                        <a href="#modern_look" class="text-lg font-medium">Others</a>
+
+                        <div class="text-sm">
+                            <p class="c">amet consectetur ipsum</p>
+                            <p class="c">Lorem amet consectetur</p>
+                            <p class="c">Lorem dolor sit</p>
+                            <p class="c">sit amet consectetur</p>
+                        </div>
+
+                    </div>
+
+                    <!-- ! Privacy & Policies -->
+                    <div class="space-y-8">
+
+                        <h1 class="text-lg font-medium">Privacy & Policies</h1>
+
+                        <div class="text-sm">
+                            <p class="c">Lorem dolor sit</p>
+                            <p class="c">Lorem amet consectetur</p>
+                            <p class="c">amet consectetur ipsum</p>
+                            <p class="c">sit amet consectetur</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+             
+        </div>
+    </section>  
+    
+
+    
+    <!-- ! Copyright Div -->
+    <section class="w-full bg-black py-16">
+        
+        <div class="w-[80%] mx-auto space-y-8">
+            <div class="h-[0.15rem] w-full bg-gray-500 mx-auto rounded-md"></div>
+
+            <div class="flex_center text-gray-400">
+    
+                <p class="pt-4">Made With ❤️ By © TOPU ROY</p>
+    
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>

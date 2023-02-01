@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Topu Roy</title>
+
+</head>
+
+<body class="font-Poppins font-medium">
+
+    <!-- ! Navigation Bar start -->
+
+    <header class="sticky top-0 left-0 z-50 backdrop-blur-sm filter">
+        <nav class="relative backdrop-blur-sm filter bg-slate-200 bg-opacity-70  ">
+            <div class="flex justify-between items-center py-4 px-5 
+                default_padding">
+
+                <div>
+                    <a href="#">
+                        <img src="../img/Logo.jpeg" alt="" class="w-32 ">
+                    </a>
+                </div>
+                <div
+                    class="hidden gap-5 uppercase text-gray-700 sm:flex sm:text-sm md:gap-7 lg:gap-10 xl:gap-16 2xl:gap-20">
+                    <a href="#"
+                        class="hover:text-orange-500 transition duration-300 text-gray-900 flex flex-col link_hover">Home</a>
+                    <a href="#" class="hover:text-orange-500 transition duration-300 flex flex-col link_hover">About</a>
+                    <a href="#"
+                        class="hover:text-orange-500 transition duration-300 flex flex-col link_hover">Contact</a>
+                    <a href="#"
+                        class="hover:text-orange-500 transition duration-300 flex flex-col link_hover">Expertise</a>
+                    <a href="#"
+                        class="hover:text-orange-500 transition duration-300 flex flex-col link_hover text-gray-500">Portfolio</a>
+                </div>
+                <div class="sm:hidden justify-end items-center ">
+                    <button id="menu_button" onclick="menu()" type="button" class="h-8 inline-block py-1 group">
+                        <div class="flex justify-end items-end flex-col py-1">
+                            <div id="line_1" class="h-[0.2rem] w-8 rounded-md bg-gray-700 transition-all duration-300">
+                            </div>
+                            <div id="line_2"
+                                class="h-[0.2rem] w-8 rounded-md bg-gray-700 my-[18%] transition-all duration-300">
+                            </div>
+                            <div class="h-[0.2rem] w-8 rounded-md bg-gray-700 transition-all duration-300"></div>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+            <div id="expanded_menu" class="translate_menu hidden transition-transform duration-300">
+                <a href="#" class=" text-gray-200">Home</a>
+                <a href="#" class="">About</a>
+                <a href="#" class="">Contact</a>
+                <a href="#" class="">Expertise</a>
+                <a href="#" class=" text-gray-500">Portfolio</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ! Hero section Start -->
+
+    <section class="default_padding">
+        <div class="px-5 flex flex-col sm:items-center justify-between mt-16
+         sm:flex-row sm:gap-4
+        ">
+            <div class="flex-1 flex flex-col sm:justify-between items-start w-5/6">
+                <div class="">
+                    <h2 class="text-right sm:text-[1em] md:text-[1.2em] lg:text-[1.6em]
+                    xl:text-[2em]
+                    ">
+                        <span class="font-semibold  text-orange-500">Hello</span>, I'M
+                    </h2>
+                    <h1 class="text-[3.5em] w-full font-bold mb-1 drop-shadow-xl
+                    md:text-[4.1em] lg:text-[4.5em] xl:text-[5.5em]
+                    ">TOPU ROY</h1>
+                    <div class="bg-black h-[0.5em] w-[18em] xl:h-[0.8em] md:w-[21em] lg:w-[23em] xl:w-[28em]"></div>
+                </div>
+                <h1 class="text-base lg:text-2xl md:text-xl xl:text-3xl mt-2 xl:mt-8 ">
+                    <span class="text-orange-500 text-lg md:text-2xl lg:text-3xl">Web Designer</span> & UI/UX Designer
+                </h1>
+            </div>
+            <div class="flex-1 flex justify-center items-center">
+                <img src="../img/topu2.png" alt=""
+                    class="mt-10 sm:mt-0 drop-shadow-lg filter px-5 sm:px-0 xl:w-[40rem]">
+            </div>
+        </div>
+    </section>
+
+    <!-- ! About Section -->
+
+    <section class="default_padding mt-20 bg-gray-800 lg:mt-20">
+        <div class="flex w-full flex-col gap-4 bg-gray-800 justify-center items-center py-8 px-5
+        sm:flex-row md:py-12 sm:px-0 sm:justify-start sm:items-start lg:py-32">
+            <div>
+                <h1 class="pb-8 text-2xl text-orange-500 font-bold drop-shadow-xl sm:hidden">ABOUT ME</h1>
+            </div>
+            <div class="flex-1 flex flex-col justify-center items-start">
+                <img src="../img/about.jpg" alt="" class=" w-full">
+            </div>
+            <div class="flex-1 flex flex-col justify-center items-center sm:justify-start sm:items-start lg:ml-4
+            2xl:ml-8
+            ">
+                <h1 class="hidden sm:block pb-8 text-2xl text-orange-500 font-bold drop-shadow-xl
+                sm:pb-0 sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-5xl
+                ">ABOUT ME</h1>
+                <p class="capitalize font-normal mt-8 text-white text-sm
+                sm:mt-0 sm:pt-4 lg:text-base lg:tracking-wider 2xl:tracking-widest 2xl:text-xl
+                ">
+                    my name is <span class="uppercase font-semibold  text-orange-500 ">topu roy</span>. i'm a student
+                    and currently doing my diploma
+                    engineering in computer science and technology.
+                </p>
+                <p class="capitalize font-normal text-white text-sm
+                sm:mt-0 sm:pt-4 lg:text-base lg:tracking-wider 2xl:tracking-widest 2xl:text-xl
+                ">
+                    i'm very passionate about technology and working hard to learn about technology and improve my
+                    skills.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ! Contact Section -->
+
+    <section class="px-5 default_padding sm:py-20">
+        <div class="w-full text-center mt-20 lg:py-8">
+
+            <!-- ! Contact Form -->
+
+            <div class="">
+                <h1 class=" text-2xl sm:text-left text-orange-500 font-bold drop-shadow-xl
+                    sm:pb-0 sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-5xl
+                ">Contact Me</h1>
+            </div>
+            <form class="flex flex-col justify-center gap-4">
+                <div class="w-full sm:flex sm:gap-4">
+
+                    <!-- ! Form For Two Column  -->
+                    <div class="relative w-full mt-8">
+
+                        <!-- ! Input Name -->
+                        <input autocomplete="off" id="input_text" placeholder="Name" type="text" class=" 
+                        peer placeholder-transparent py-2 px-2 w-full focus:outline-none border-b border-black
+                        duration-300 transition-colors focus:border-b-2 focus:border-orange-500
+                        ">
+                        <label for="input_text" class=" absolute -top-4 left-0 transition-all duration-300
+                        peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 peer-placeholder-shown:text-gray-800
+                        peer-focus:text-orange-500 peer-focus:-top-4 peer-focus:left-0 peer-focus:text-lg
+                        ">Name</label>
+
+                    </div>
+
+                    <div class="relative w-full mt-8">
+
+                        <!-- ! Input Email -->
+                        <input autocomplete="off" id="input_email" placeholder="Email" type="email" class=" 
+                        peer placeholder-transparent py-2 px-2 w-full focus:outline-none border-b border-black
+                        duration-300 transition-colors focus:border-b-2 focus:border-orange-500
+                        ">
+                        <label for="input_email" class=" absolute -top-4 left-0 transition-all duration-300
+                        peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 peer-placeholder-shown:text-gray-800
+                        peer-focus:text-orange-500 peer-focus:-top-4 peer-focus:left-0 peer-focus:text-lg
+                        ">Email</label>
+
+                    </div>
+
+                </div>
+                <div class="relative w-full mt-8">
+
+                    <!-- ! Input Message -->
+                    <input autocomplete="off" id="input_message" placeholder="Type Your Message" type="text" class=" 
+                        peer placeholder-transparent py-2 px-2 w-full focus:outline-none border-b border-black
+                        duration-300 transition-colors focus:border-b-2 focus:border-orange-500">
+
+                    <label for="input_message" class=" absolute -top-4 left-0 transition-all duration-300
+                        peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-placeholder-shown:left-2 peer-placeholder-shown:text-gray-800
+                        peer-focus:text-orange-500 peer-focus:-top-4 peer-focus:left-0 peer-focus:text-lg
+                    ">Type Your Message</label>
+
+                </div>
+
+                <!-- ! Form Submit Buttons -->
+                <div class="w-full flex justify-around items-center mt-10
+                    sm:justify-start sm:gap-4">
+
+                    <!-- ! Feedback Button -->
+                    <button type="button" class="uppercase text-gray-800 font-semibold text-center py-4 px-8 
+                        rounded border-2 border-orange-500 bg-orange-500 hover:bg-white
+                        hover:text-orange-500 hover:border-2">Feedback</button>
+
+                    <!-- ! Submit Button -->
+                    <button type="button" class="uppercase text-orange-500 font-semibold text-center py-4 px-8 
+                        rounded border-2 border-orange-500 hover:bg-orange-500 hover:text-gray-800">Submit</button>
+                </div>
+
+            </form>
+
+            <!-- ! Social Links -->
+
+            <div class="mt-16 w-full flex justify-evenly items-center sm:justify-start sm:gap-16">
+
+                <!-- ! Facebook -->
+                <div class="relative group">
+                    <span class="absolute py-1 px-3 bg-[#1f7efb] -top-[110%] opacity-0
+                        -left-[80%] rounded-xl facebook after:bg-[#1f7cf6] facebook text-slate-100
+                        sm:group-hover:opacity-100 transition-opacity duration-300 
+                    ">Facebook</span>
+                    <a href="#"><img src="../img/facebook.png" alt="" class=" w-10 transition-all 
+                        duration-300 hover:scale-110">
+                    </a>
+                </div>
+
+                <!-- ! Instagram -->
+                <div class="relative group">
+                    <span class="absolute py-1 px-3 bg-[#c51c98] -top-[110%] opacity-0
+                        -left-[85%] rounded-xl facebook after:bg-[#c51c98] facebook text-slate-100
+                        sm:group-hover:opacity-100 transition-opacity duration-300 
+                    ">Instagram</span>
+                    <a href="#"><img src="../img/insta.png" alt="" class=" w-10 transition-all 
+                        duration-300 hover:scale-110">
+                    </a>
+                </div>
+
+                <!-- ! Linkdin -->
+                <div class="relative group">
+                    <span class="absolute py-1 px-3 bg-[#007ab9] -top-[110%] opacity-0
+                        -left-[55%] rounded-xl facebook after:bg-[#007ab9] facebook text-slate-100
+                        sm:group-hover:opacity-100 transition-opacity duration-300 
+                    ">Linkdin</span>
+                    <a href="#"><img src="../img/linkdin.png" alt="" class=" w-10 transition-all 
+                        duration-300 hover:scale-110">
+                    </a>
+                </div>
+
+                <!-- ! Twitter -->
+                <div class="relative group">
+                    <span class="absolute py-1 px-3 bg-[#03a9f4] -top-[110%] opacity-0
+                        -left-[55%] rounded-xl facebook after:bg-[#03a9f4] facebook text-slate-100
+                        sm:group-hover:opacity-100 transition-opacity duration-300 
+                    ">Twitter</span>
+                    <a href="#"><img src="../img/tweeter.png" alt="" class=" w-10 transition-all 
+                        duration-300 hover:scale-110">
+                    </a>
+                </div>
+
+                <!-- ! Github -->
+                <div class="relative group">
+                    <span class="absolute py-1 px-3 bg-black -top-[110%] opacity-0
+                        -left-[55%] rounded-xl facebook after:bg-black facebook text-slate-100
+                        sm:group-hover:opacity-100 transition-opacity duration-300 
+                    ">Github</span>
+                    <a href="#"><img src="../img/github.png" alt="" class=" w-10 transition-all 
+                        duration-300 hover:scale-110">
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ! Expertise Section -->
+    <section class="px-5 default_padding bg-gray-800 py-8 lg:py-24  mt-20">
+
+        <div class="md:pb-10">
+
+            <!-- ! Expertise Heading -->
+            <div class="text-center mt-10 sm:mb-8 md:mb-14 lg:mb-20 ">
+                <h1 class="sm:underline_hover text-2xl sm:text-left text-orange-500 font-bold 
+                    drop-shadow-xl flex flex-col
+                    sm:pb-0 sm:text-3xl md:text-3xl lg:text-3xl xl:text-5xl 2xl:text-5xl
+                ">Expertise
+                </h1>
+            </div>
+
+            <!-- ! Skills List -->
+            <div class="sm:grid sm:grid-cols-2 lg:grid-cols-3 flex flex-col justify-center items-center gap-4 mt-10">
+
+                <!-- ! HTML 5 -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 sm:px-4 md:px-8 lg:px-14 w-full h-full
+                ">
+                    <span class=" flex justify-center items-center w-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/html.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">HTML v5</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">One of the most important technology is
+                        of course HTML.
+                        even these days , HTML is unreplaceable.
+                    </p>
+                </div>
+
+                <!-- ! CSS 3 -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/css.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">CSS v3</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">There is no value of ugly looking HTML
+                        code without Modern CSS.
+                        it's the most important thing when we design any website.
+                    </p>
+                </div>
+
+                <!-- ! Tailwind CSS -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/tailwind.png" alt="" class="w-[2.5rem] p-1 aspect-square">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">TailwindCSS</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">Modern designs are vary hard to achieve
+                        with vanilla CSS.
+                        we can save time and get a great design with TailwindCSS.</p>
+                </div>
+
+                <!-- ! JavaScript -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/javascript.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">JavaScript</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">JavaScript is often called the soul of
+                        a website.
+                        Modern web is the gift of JavaScript.
+                    </p>
+                </div>
+
+                <!-- ! React -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/react.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">React</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">React is a JavaScript-based UI
+                        development library. Facebook and an open-source developer
+                        community run it. it is widely used in web development.
+                    </p>
+                </div>
+
+                <!-- ! Figma -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/figma.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">Figma</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">Figma is a cloud-based design tool that
+                        is similar to Sketch in functionality and features,
+                        but with big differences that make Figma better for team collaboration.
+                    </p>
+                </div>
+
+                <!-- ! Photoshop -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/photoshop.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">Photoshop</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">Photoshop is an image creation, graphic
+                        design and photo editing software developed by Adobe.
+                        widely use for manipulating any photo.
+                    </p>
+                </div>
+
+                <!-- ! Video Editing -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/Videoediting.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">Video Editing</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3 capitalize">the current internet is moving towards
+                        video content from the previous ara
+                        of photos. its great to know the basics of video editing fundamentals.
+                    </p>
+                </div>
+
+                <!-- ! Lightroom -->
+                <div class="flex flex-col items-center justify-center
+                bg-gray-200 rounded py-8 px-2 w-full h-full sm:px-4 md:px-8 lg:px-14
+                ">
+                    <span class="flex justify-center items-center w-[3rem] h-[3rem] p-2 bg-gray-800 rounded-full">
+                        <img src="../img/lightroom.png" alt="" class="w-[2.5rem] p-1">
+                    </span>
+                    <h1 class="text-orange-500 text-base font-semibold mt-2">Lightroom</h1>
+                    <p class="text-center text-gray-600 text-sm pt-3  capitalize">Adobe Lightroom is a piece of image
+                        organization and image
+                        manipulation software developed by Adobe Inc.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="px-5 default_padding w-full h-10 sm:h-20  bg-gray-700 flex justify-between  items-center">
+
+
+        <p class="text-gray-400 text-xs sm:text-base"><span class="text-lg">©</span> Copyright (2022) | All Rights
+            Reserved.</p>
+
+        <div class="flex justify-center items-center gap-2 sm:gap-4">
+            <a href="#"><img src="../img/facebook.png" alt="" class="w-[1rem] md:w-[1.5rem] cursor-pointer"></a>
+            <a href="#"><img src="../img/insta.png" alt="" class="w-[1rem] md:w-[1.5rem] cursor-pointer"></a>
+            <a href="#"><img src="../img/linkdin.png" alt="" class="w-[1rem] md:w-[1.5rem] cursor-pointer"></a>
+            <a href="#"><img src="../img/github.png" alt="" class="w-[1rem] md:w-[1.5rem] cursor-pointer"></a>
+            <a href="#"><img src="../img/tweeter.png" alt="" class="w-[1rem] md:w-[1.5rem] cursor-pointer"></a>
+        </div>
+
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById("menu_button");
+        const line1 = document.getElementById("line_1");
+        const line2 = document.getElementById("line_2");
+        const slideMenu = document.getElementById("expanded_menu");
+
+        function menu() {
+
+            // line 1
+
+            if (line1.classList.contains("w-8")) {
+
+                line1.classList.remove("w-8");
+                line1.classList.add("w-6");
+            } else {
+                line1.classList.remove("w-6");
+                line1.classList.add("w-8");
+            }
+
+            // Line 2
+
+            if (line2.classList.contains("w-8")) {
+
+                line2.classList.remove("w-8");
+                line2.classList.add("w-7");
+            } else {
+                line2.classList.remove("w-7");
+                line2.classList.add("w-8");
+            }
+
+
+            if (slideMenu.classList.contains("translate_menu")) {
+
+                slideMenu.classList.remove("translate_menu");
+                slideMenu.classList.add("menu_slide");
+                slideMenu.classList.remove("hidden");
+            } else {
+
+                slideMenu.classList.add("hidden");
+                slideMenu.classList.remove("menu_slide");
+                slideMenu.classList.add("translate_menu");
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
